@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>True Chat Main Screen</title>
+
+    <link rel="stylesheet" href="./style2.css" />
+  </head>
+
+  <body>
+    <!-- partial:index.partial.html -->
+
+    <section>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <h1>True Chat</h1>
+
+      <div class="signin"></div>
+      <div class="dib2">
+        <h1 class="logo">True Chat- The Hidden Privacy</h1>
+
+        <div class="inputBox">
+          <h1>Manage Group</h1>
+        </div>
+
+        <div class="container3">
+          <form onsubmit="grouphandler(event)">
+            <div class="box3">
+              <div class="container2">
+                <div><i>Enter Name</i></div>
+                <div>
+                  <input type="text" name="name" id="email" required />
+                </div>
+              </div>
+            </div>
+            <div class="box3">
+              <div class="container2">
+                <div><i>Group Name</i></div>
+                <div>
+                  <input type="text" name="groupnew" id="password" required />
+                </div>
+              </div>
+            </div>
+            <div class="box3">
+              <div class="container2">
+                <div><i>&nbsp;</i></div>
+                <div>
+                  <input type="submit" value="Create Group" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <h2>&nbsp;</h2>
+
+        <div class="container2">
+          <div class="box4">
+            <div id="list-of-all-groups">
+              <h4>list of all groups</h4>
+              <div class="make-scroll">
+                <ul id="created-group-show"></ul>
+
+                <ul id="users-list"></ul>
+              </div>
+            </div>
+          </div>
+          <div class="box4">
+            <div id="list-contcts">
+              <h4>list of all contact</h4>
+              <div class="make-scroll">
+                <ul id="list-of-all-contacts"></ul>
+
+                <ul id="users-list"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Add User To Group</h2>
+        <div class="container3">
+          <form onsubmit="addUserToGroup(event)">
+            <div class="box3">
+              <div class="container2">
+                <div><i>Group Name</i></div>
+                <div>
+                  <input
+                    type="text"
+                    name="grpname"
+                    placeholder="Enter group name"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="box3">
+              <div class="container2">
+                <div><i>Email</i></div>
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email In contact"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="box3">
+              <div class="container2">
+                <div>
+                  <select name="adminStatus">
+                    <option>Admin</option>
+                    <option>Not Admin</option>
+                  </select>
+                </div>
+                <div>
+                  <input type="submit" value="Add User To Group" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <h2>Remove User From Group</h2>
+        <div class="container3">
+          <form onsubmit="removeUser(event)">
+            <div class="box3">
+              <div class="container2">
+                <div><i>Group Name</i></div>
+                <div>
+                  <input
+                    type="text"
+                    name="removeName"
+                    placeholder="Enter group name"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="box3">
+              <div class="container2">
+                <div><i>Email</i></div>
+                <div>
+                  <input
+                    type="email"
+                    name="removeEmail"
+                    placeholder="Email In contact"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="box3">
+              <div class="container2">
+                <div><i>&nbsp;</i></div>
+                <div>
+                  <input type="submit" value="Remove User To Group" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./new-group.js"></script>
+  </body>
+</html>

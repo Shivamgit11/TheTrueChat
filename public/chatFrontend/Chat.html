@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>True Chat Main Screen</title>
+
+    <link rel="stylesheet" href="./style2.css" />
+  </head>
+
+  <body>
+    <!-- partial:index.partial.html -->
+
+    <section>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <h1>True Chat</h1>
+
+      <div class="signin"></div>
+      <div class="dib2">
+        <h1 class="logo">True Chat- The Hidden Privacy</h1>
+
+        <div class="inputBox">
+          <a class="anc1" href="/chatFrontend/new-group.html">Create Group</a>
+        </div>
+
+        <div class="container">
+          <div id="myScrollableDiv" class="scrollable-div">
+            <!-- Content goes here -->
+            <h1>Be Happy</h1>
+
+            <ul id="listofmessage"></ul>
+
+            <!-- Add more content as needed -->
+          </div>
+
+          <div class="">
+            <div id="myScrollableDiv" class="scrollable-div2">
+              <!-- Content goes here -->
+              <h1>Groups</h1>
+              <div id="limitMDiv">
+                <select id="mySelect">
+                  <!-- Options will be added dynamically -->
+                  <option value="0">CLOUDCHAT</option>
+                </select>
+              </div>
+
+              <!-- <ul id="listofmessage"></ul> -->
+
+              <!-- Add more content as needed -->
+            </div>
+          </div>
+        </div>
+       
+        <form style="text-align: center;" onsubmit="savChat(event)">
+          <input type="file" id="myfile" />
+          <input id="amount" type="text" name="chat" />
+
+          <button>send</button>
+        </form>
+        <!-- <form class="row" onsubmit="savChat(event)">
+          <div id="bottom">
+            <input type="file" id="myfile" />
+            <input id="amount" type="text" name="chat" />
+
+            <button>send</button>
+          </div>
+        </form> -->
+      </div>
+    </section>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./chat.js"></script>
+
+    <script>
+      // Scroll to the bottom of the div
+      var scrollableDiv = document.getElementById("myScrollableDiv");
+      scrollableDiv.scrollTop = scrollableDiv.scrollHeight;
+    </script>
+  </body>
+</html>
