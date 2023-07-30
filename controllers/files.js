@@ -2,7 +2,7 @@
 // const Message = require("../model/Chat");
 const Chat = require("../models/Chat");
 
-const S3Service = require("../services/S3services");
+const S3Service = require("../services/s3-services");
 const downloadFiles = async (req, res) => {
   try {
     console.log("file********", req.file);

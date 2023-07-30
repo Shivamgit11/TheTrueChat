@@ -37,7 +37,7 @@ const accessLogStream = fs.createWriteStream(
   { flags: "a" }
 );
 
-const resetPasswordRoutes = require("./routes/resetPassword");
+const resetPasswordRoutes = require("./routes/reset-password");
 var cors = require("cors");
 
 const dotenv = require("dotenv");
