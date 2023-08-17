@@ -47,7 +47,7 @@ fileInput.addEventListener(
 
       const token = localStorage.getItem("token");
       const fileStored = await axios.post(
-        `http://localhost:3000/file/filestored/${groupId}`,
+        `http://54.224.243.74:3000/file/filestored/${groupId}`,
         formData,
         {
           headers: {
@@ -86,7 +86,7 @@ async function savChat(event) {
   console.log(token);
 
   axios
-    .post(`http://localhost:3000/chat/addchat?groupid=${groupid}`, obj, {
+    .post(`http://54.224.243.74:3000/chat/addchat?groupid=${groupid}`, obj, {
       headers: { Authorization: token },
     })
     .then((response) => {
@@ -112,7 +112,7 @@ function handleSelectChange() {
   console.log("Selected option value:", groupid);
   console.log("line noi 57", groupid);
   axios
-    .get(`http://localhost:3000/chat/chatdetails?groupid=${groupid}`, {
+    .get(`http://54.224.243.74:3000/chat/chatdetails?groupid=${groupid}`, {
       headers: { Authorization: token },
     })
     .then((response) => {
@@ -136,7 +136,7 @@ function handleSelectChange() {
 async function getContacts() {
   // listContact.innerHTML = "";
   const token = localStorage.getItem("token");
-  const response = await axios.get("http://localhost:3000/chat/allpartgroup", {
+  const response = await axios.get("http://54.224.243.74:3000/chat/allpartgroup", {
     headers: { Authorization: token },
   });
   console.log("parted group", response);

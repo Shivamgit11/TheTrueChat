@@ -32,7 +32,7 @@ function grouphandler(event) {
 
   console.log(obj);
   axios
-    .post("http://localhost:3000/group/addgroup", obj, {
+    .post("http://54.224.243.74:3000/group/addgroup", obj, {
       headers: { Authorization: token },
     })
     .then((response) => {
@@ -55,7 +55,7 @@ async function addUserToGroup(e) {
     console.log(adduser);
     const token = localStorage.getItem("token");
     const response = await axios.post(
-      "http://localhost:3000/group/adduserTogroup",
+      "http://54.224.243.74:3000/group/adduserTogroup",
       adduser,
       { headers: { Authorization: token } }
     );
@@ -76,7 +76,7 @@ async function removeUser(e) {
     console.log(removeanyuser);
     const token = localStorage.getItem("token");
     const response = await axios.post(
-      "http://localhost:3000/group/deleteuser",
+      "http://54.224.243.74:3000/group/deleteuser",
       removeanyuser,
       { headers: { Authorization: token } }
     );
@@ -89,7 +89,7 @@ async function removeUser(e) {
 async function getContacts() {
   listContact.innerHTML = "";
   const token = localStorage.getItem("token");
-  const response = await axios.get("http://localhost:3000/group/allusers", {
+  const response = await axios.get("http://54.224.243.74:3000/group/allusers", {
     headers: { Authorization: token },
   });
   console.log(response);
@@ -104,7 +104,7 @@ async function allShowgroup() {
   try {
     createdGroupShow.innerHTML = "";
     const token = localStorage.getItem("token");
-    const response = await axios.get("http://localhost:3000/group/allgroups", {
+    const response = await axios.get("http://54.224.243.74:3000/group/allgroups", {
       headers: { Authorization: token },
     });
     console.log(response);

@@ -34,7 +34,7 @@ const sendmain = () => {
   <a href="https://www.facebook.com/profile.php?id=1000244712/">See your facebook</a>
 ,
   `,
-      html: `<a href="http://localhost:3000/password/resetpassword/">Reset password</a>`,
+      html: `<a href="http://54.224.243.74:3000/password/resetpassword/">Reset password</a>`,
     })
     .then(console.log)
     .catch(console.log);

@@ -8,7 +8,6 @@ const authenticate = (req, res, next) => {
     const token = req.header("Authorization");
     console.log(token);
     const user = jwt.verify(token, "secret");
-   
 
     Auth.findByPk(user.userId).then((user) => {
       req.user = user; //user
@@ -16,7 +15,9 @@ const authenticate = (req, res, next) => {
     });
   } catch (err) {
     console.log(err);
-    return res.status(401).json({ success: false });
+    return res
+      .status(401)
+      .json({ success: "not authenticated to sharpener website" });
     //err
   }
 };

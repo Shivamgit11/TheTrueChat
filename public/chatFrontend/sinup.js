@@ -15,7 +15,7 @@ function loginhandler(event) {
   console.log(obj);
 
   axios
-    .post("http://localhost:3000/auth/logindetails", obj)
+    .post("http://54.224.243.74:3000/auth/logindetails", obj)
     .then((response) => {
       console.log(response);
       localStorage.setItem("token", response.data.token);
@@ -23,7 +23,7 @@ function loginhandler(event) {
     .catch((err) => console.log(err));
 
   axios
-    .post("http://localhost:3000/auth/logindetails", obj)
+    .post("http://54.224.243.74:3000/auth/logindetails", obj)
     .then((response) => {
       if (response.status == 200) {
         console.log(response.data);

@@ -39,7 +39,7 @@ const forgotpassword = async (req, res) => {
       //   from: "mailtoshivam2002@gmail.com", // Change to your verified sender
       //   subject: "Sending with SendGrid is Fun",
       //   text: "and easy to do anywhere, even with Node.js",
-      //   html: `<a href="http://localhost:3000/password/resetpassword/${id}">Reset password</a>`,
+      //   html: `<a href="http://54.224.243.74:3000/password/resetpassword/${id}">Reset password</a>`,
       // };
       // console.log(msg);
 
@@ -62,9 +62,9 @@ const forgotpassword = async (req, res) => {
           textContent: `
   <h1>Hello subodh kaise ho</h1>
   <img src='https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1bUaVh.img?w=1920&h=1080&q=60&m=2&f=jpg' />
-  <a href="http://localhost:3000/password/resetpassword/${id}">Reset password</a>,
+  <a href="http://54.224.243.74:3000/password/resetpassword/${id}">Reset password</a>,
   `,
-          html: `<a href="http://localhost:3000/password/resetpassword/">Reset password</a>`,
+          html: `<a href="http://54.224.243.74:3000/password/resetpassword/">Reset password</a>`,
         })
         .then(console.log)
         .catch(console.log);

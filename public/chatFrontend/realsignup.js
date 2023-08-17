@@ -13,7 +13,7 @@ function saveLogin(event) {
 
   console.log(obj, "frontend");
   axios
-    .post("http://localhost:3000/auth/authdetails", obj)
+    .post("http://54.224.243.74:3000/auth/authdetails", obj)
     .then((response) => {
       console.log(response);
       if (response.status === 202) {
